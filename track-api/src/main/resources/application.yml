@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: db, core, admin
+  messages:
+    encoding: UTF-8
+  application:
+    name: track-admin-api
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 38083
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    org.mybatis: ERROR
+    top.codx.api: DEBUG
+    top.codx.boot: ERROR
+
+swagger:
+  production: false
